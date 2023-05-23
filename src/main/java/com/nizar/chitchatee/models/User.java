@@ -1,20 +1,19 @@
 package com.nizar.chitchatee.models;
 
-import jakarta.persistence.*;
-
-import java.util.List;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table
 public class User {
 
+
+    private int id;
     private String sessionID;
     private String username;
-    @OneToMany
-    private List<Message> messages;
-    @Id
-    @GeneratedValue
-    private Long id;
+
 
     public User() {
     }
@@ -35,19 +34,14 @@ public class User {
         this.username = username;
     }
 
-    public List<Message> getMessages() {
-        return messages;
-    }
 
-    public void setMessages(List<Message> messages) {
-        this.messages = messages;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
+    @Id
+    @GeneratedValue
+    public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

@@ -14,6 +14,12 @@
           <element id="module-output" name="ChitChatEE" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jakarta.enterprise:jakarta.enterprise.cdi-api:4.0.1" />
+          <element id="library" level="project" name="Maven: jakarta.enterprise:jakarta.enterprise.lang-model:4.0.1" />
+          <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:2.1.0" />
+          <element id="library" level="project" name="Maven: jakarta.el:jakarta.el-api:5.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.interceptor:jakarta.interceptor-api:2.1.0" />
+          <element id="library" level="project" name="Maven: jakarta.inject:jakarta.inject-api:2.0.1" />
           <element id="library" level="project" name="Maven: com.mysql:mysql-connector-j:8.0.32" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.21.9" />
           <element id="library" level="project" name="Maven: org.hibernate.orm:hibernate-core:6.1.7.Final" />
@@ -30,11 +36,9 @@
           <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-core:3.0.2" />
           <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:3.0.2" />
           <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:4.0.1" />
-          <element id="library" level="project" name="Maven: jakarta.inject:jakarta.inject-api:2.0.0" />
           <element id="library" level="project" name="Maven: org.antlr:antlr4-runtime:4.10.1" />
           <element id="library" level="project" name="Maven: jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:2.0.0" />
           <element id="library" level="project" name="Maven: jakarta.servlet:jakarta.servlet-api:5.0.0" />
-          <element id="library" level="project" name="Maven: jakarta.el:jakarta.el-api:4.0.0" />
           <element id="library" level="project" name="Maven: org.glassfish.web:jakarta.servlet.jsp.jstl:2.0.0" />
           <element id="library" level="project" name="Maven: org.jetbrains:annotations:24.0.1" />
           <element id="library" level="project" name="Maven: org.hibernate.orm:hibernate-ant:6.1.7.Final" />
