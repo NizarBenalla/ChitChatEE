@@ -12,7 +12,7 @@ import jakarta.persistence.criteria.Root;
 import java.util.List;
 
 public class UserDAOImpl implements UserDAO {
-    private EntityManagerFactory entityManagerFactory;
+    private final EntityManagerFactory entityManagerFactory;
 
     public UserDAOImpl() {
         entityManagerFactory = Persistence.createEntityManagerFactory("default");

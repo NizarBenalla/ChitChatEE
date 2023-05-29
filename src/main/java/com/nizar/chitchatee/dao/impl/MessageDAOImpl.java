@@ -12,7 +12,7 @@ import jakarta.persistence.criteria.Root;
 import java.util.List;
 
 public class MessageDAOImpl implements MessageDAO {
-    private EntityManagerFactory entityManagerFactory;
+    private final EntityManagerFactory entityManagerFactory;
 
     public MessageDAOImpl() {
         entityManagerFactory = Persistence.createEntityManagerFactory("default");

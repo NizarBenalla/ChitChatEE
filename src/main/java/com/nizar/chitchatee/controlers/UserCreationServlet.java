@@ -30,15 +30,12 @@ public class UserCreationServlet extends HttpServlet {
         String username = request.getParameter("username");
         HttpSession session = request.getSession();
         String sessionID = session.getId();
-        User nizar = new User();
-        nizar.setUsername(username);
-        nizar.setSessionID(sessionID);
-
-        userDAO.save(nizar);
-
-        int i = nizar.getId();
-        request.setAttribute("amina", i);
-        request.getRequestDispatcher("/chatting.jsp").forward(request, response);
+        User user = new User();
+        user.setUsername(username);
+        user.setSessionID(sessionID);
+        userDAO.save(user);
+        request.setAttribute("userID", user.getId());
+        request.getRequestDispatcher("/chat.jsp").forward(request, response);
 
     }
 

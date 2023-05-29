@@ -38,7 +38,9 @@ public class MessageServlet extends HttpServlet {
         myMessage.setUser_id(Integer.parseInt(String.valueOf(parameterValue)));
         myMessage.setSession(sessionID);
         messageDAO.save(myMessage);
-        this.getServletContext().getRequestDispatcher("/chatting.jsp").forward(request, response);
+        request.setAttribute("userID", request.getAttribute("userID"));
+
+        this.getServletContext().getRequestDispatcher("/chat.jsp").forward(request, response);
 
     }
 }
